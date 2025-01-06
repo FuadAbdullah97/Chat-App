@@ -4,7 +4,7 @@ import MessageContainer from "../../components/messages/MessageContainer.jsx";
 const home = () => {
     return(
     <>
-    <div className='flex sm:h-[450px] md:h-[550px] rounded-lg overflow-hidden bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
+    <div className='flex sm:h-[450px] md:h-[550px]    w-full  rounded-lg backdrop-blur-sm bg-white/30'>
 
         <Sidebar/>
         <MessageContainer/>
