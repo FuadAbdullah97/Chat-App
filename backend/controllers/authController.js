@@ -39,6 +39,7 @@ try {
         generateTokenAndSetCookie(newUser._id, res);
         await newUser.save();
 
+
         res.status(201).json({
                     _id: newUser._id,
                     fullName : newUser.fullName,

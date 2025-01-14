@@ -4,28 +4,25 @@ import useSignup from "../../hooks/useSignup.js";
 
 
 
-const SignUp =  () => {
+const SignUp = () => {
+    const [inputs, setInputs] = useState({
+        fullName: "",
+        userName: "",
+        password: "",
+        confirmPassword: "",
+        gender: "",
+    });
 
-const [inputs,setInputs] = useState({
-    fullName: "",
-    userName: "",
-    password: "",
-    confirmPassword: "",
-    gender: "",
-});
+    const { loading, signup } = useSignup();
 
-const { loading, signup } = useSignup();
-const handleCheckboxChange = (gender) => {
-    setInputs({...inputs,gender});
-}
+    const handleCheckboxChange = (gender) => {
+        setInputs({ ...inputs, gender });
+    };
 
-
-
-const handleSubmit = async (e)=>{
-    e.preventDefault();
-    await signup(inputs)
-}
-
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        await signup(inputs);
+    };
 
 
     return (
