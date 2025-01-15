@@ -1,6 +1,7 @@
 import GenderCheck from "./GenderCheck.jsx";
 import {useState} from "react";
 import useSignup from "../../hooks/useSignup.js";
+import {Link} from "react-router-dom";
 
 
 
@@ -95,9 +96,14 @@ const SignUp = () => {
                             <input type="checkbox" className="checkbox"/>
                         </label>
                     </div>
-
+                    <Link to="/login" className="link link-hover text-primary">
+                       Already have an account?
+                    </Link>
                     <div className="form-control mt-6">
-                        <button className="btn btn-primary">Sign Up</button>
+                        <button className="btn btn-primary" disabled={loading}>
+                            {loading ? <span className='loading loading-spinner' > </span> : "Sign Up"}
+
+                            </button>
                     </div>
                 </div>
             </div>
