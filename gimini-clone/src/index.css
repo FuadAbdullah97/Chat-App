@@ -9,3 +9,36 @@ body {
   padding: 0 ;
   margin: 0;
 }
+
+.result {
+  padding: 0px 5%;
+  max-height: 80vh;
+  overflow-y : auto;
+}
+.result ::-webkit-scrollbar {
+  display: none;
+}
+.result-question {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+.result-question img{
+  width: 50px;
+  max-height: 50px;
+  border-radius: 100%;
+  padding: 10px;
+}
+.reslt-asnwer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.reslt-asnwer img {
+  width: 50px;
+  max-height: 50px;
+  padding: 10px;
+
+}
+

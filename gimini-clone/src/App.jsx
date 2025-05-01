@@ -3,7 +3,7 @@ import SideBar from "./components/Sidebar/SideBar.jsx";
 import Main from "./components/Main/Main.jsx";
 
 
-function App(props) {
+function App() {
     return (
         <>
             <div style={{display: 'flex'}}>
