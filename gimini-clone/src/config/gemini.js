@@ -6,7 +6,7 @@ import {
 // import fs  from  "node:fs"
 // import mime  from  "mime-types"
 
-const apiKey = 'AIzaSyByn2q4dL1rrMI6eMN-2JerZvVs5mCAlvI'; // Replace with your actual API key
+const apiKey = process.env.GEMINI_API_KEY; // Replace with your actual API key
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
